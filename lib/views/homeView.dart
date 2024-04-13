@@ -9,6 +9,7 @@ class homeView extends StatelessWidget {
       appBar: AppBar(
         title: Text('News App'),
       ),
+      
     );
   }
 }
