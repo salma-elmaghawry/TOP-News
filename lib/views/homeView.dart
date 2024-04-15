@@ -24,7 +24,21 @@ class homeView extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: newsListView(),
+      body:const Padding(
+        padding:  EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            CategoryListView(),
+            SizedBox(
+              height: 25,
+            ),
+            Expanded(child: newsListView()),
+      
+          ],
+        ),
+      )
+
+      
     );
   }
 }
