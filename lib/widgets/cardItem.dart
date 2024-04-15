@@ -9,9 +9,9 @@ class cardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 10),
+      padding: const EdgeInsets.only(right: 8,left: 8),
       child: Container(
-        height: 100,
+        height: 1000,
         width: 170,
         decoration: BoxDecoration(
             image:  DecorationImage(
