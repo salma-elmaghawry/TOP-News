@@ -11,7 +11,7 @@ class cardItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 8,left: 6),
       child: Container(
-        height: 1000,
+        height: 120,
         width: 170,
         decoration: BoxDecoration(
             image:  DecorationImage(
@@ -21,7 +21,7 @@ class cardItem extends StatelessWidget {
             child: Text(
           category.categoryName,
           style: const TextStyle(
-            fontStyle: FontStyle.italic,
+            //fontStyle: FontStyle.italic,
             fontWeight: FontWeight.bold,
             color: Colors.white,
             fontSize: 20,
