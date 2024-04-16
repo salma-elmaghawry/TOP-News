@@ -17,7 +17,7 @@ class homeView extends StatelessWidget {
               'News',
               style: TextStyle(fontSize: 23, color: Colors.black),
             ),
-            Text('Cloud', style: TextStyle(fontSize: 23, color: Colors.amber)),
+            Text('Wave', style: TextStyle(fontSize: 23, color: Colors.amber)),
           ],
         ),
         centerTitle: true,
