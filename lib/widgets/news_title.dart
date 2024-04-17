@@ -12,7 +12,7 @@ class newsTitle extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
           child: Image.network(
-            'https://i.pinimg.com/564x/98/f9/ca/98f9ca9041fa6075a259496894f45457.jpg',
+            'https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -25,7 +25,7 @@ class newsTitle extends StatelessWidget {
           height: 12,
         ),
         const Text(
-          'Loremkmckdnalfmakmfaknfjrnf,',
+          'Salma Elmaghawry',
           maxLines: 2, //عشان اتحكم فى عدد الاسطر بتاع النص
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
@@ -38,7 +38,7 @@ class newsTitle extends StatelessWidget {
           height: 8,
         ),
         const Text(
-          'dkkkkkkkkkkkkkkds;amekdmkq',
+          'Computer Science Student',
           maxLines: 2,
           style: TextStyle(color: Colors.grey, fontSize: 14),
         )
