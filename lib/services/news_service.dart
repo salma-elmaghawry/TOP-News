@@ -8,6 +8,8 @@ class NewsService {
     Response response = await dio.get(
         'https://newsapi.org/v2/top-headlines?apiKey=cd8ebc8ba0c549788bffa0647702502f&country=eg&category=general');
     Map<String, dynamic> jsonData = response.data;
-    print(jsonData['articles']);
+    //list of maps
+    List<dynamic> articles = jsonData['articles'];
+    
   }
 }
