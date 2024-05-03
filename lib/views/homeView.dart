@@ -14,10 +14,10 @@ class homeView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'News',
-              style: TextStyle(fontSize: 23, color: Colors.black),
+              'TOP ',
+              style: TextStyle(fontSize: 25, color:Color.fromARGB(255, 235, 60, 7)),
             ),
-            Text('Wave', style: TextStyle(fontSize: 23, color: Colors.amber)),
+            Text('News', style: TextStyle(fontSize: 25, color: Colors.black)),
           ],
         ),
         centerTitle: true,
