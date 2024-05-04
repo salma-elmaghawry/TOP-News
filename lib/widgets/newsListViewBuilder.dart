@@ -1,6 +1,6 @@
-import 'dart:html';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/models/articleModel.dart';
 import 'package:news_app/services/news_service.dart';
 import 'package:news_app/widgets/newsListView.dart';
 
@@ -25,7 +25,7 @@ class _newsListViewBuilderState extends State<newsListViewBuilder> {
   
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
+    return FutureBuilder<List<ArticleModel>>(
         future: future,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
