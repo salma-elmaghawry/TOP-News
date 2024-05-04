@@ -22,7 +22,7 @@ class newsTitle extends StatelessWidget {
               return Text('Error');
             },
           ):Image.asset(
-          'assets/general.avif',
+          '',
           height: 200,
           width: double.infinity,
           fit: BoxFit.cover,

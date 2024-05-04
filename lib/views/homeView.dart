@@ -21,10 +21,10 @@ class homeView extends StatelessWidget {
             Text(
               'TOP ',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 235, 60, 7)),
-            ),
+                  fontSize: 25, color:Color(0xffE72929)
+            ),),
             Text('News', style: TextStyle(fontSize: 25, color: Colors.black)),
-          ],
+        ],
         ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
@@ -41,7 +41,7 @@ class homeView extends StatelessWidget {
                 height: 25,
               ),
             ),
-            newsListViewBuilder(),
+            newsListViewBuilder(category:'general' ,),
           ],
         ),
       ),
