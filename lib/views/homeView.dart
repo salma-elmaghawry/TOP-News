@@ -1,12 +1,6 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:news_app/models/articleModel.dart';
-import 'package:news_app/services/news_service.dart';
 import 'package:news_app/widgets/categryListView.dart';
-import 'package:news_app/widgets/newsListView.dart';
 import 'package:news_app/widgets/newsListViewBuilder.dart';
-import 'package:news_app/widgets/news_title.dart';
 
 class homeView extends StatelessWidget {
   const homeView({super.key});
