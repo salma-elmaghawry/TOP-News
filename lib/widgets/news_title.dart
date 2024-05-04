@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:news_app/models/articleModel.dart';
 
 class newsTitle extends StatelessWidget {
-  const newsTitle({super.key});
+  const newsTitle({super.key, required this.articleModel});
 
+  final ArticleModel articleModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -12,23 +13,23 @@ class newsTitle extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
           child: Image.network(
-            'https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            articleModel.image!,
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
             errorBuilder: (context, error, stackTrace) {
-              return Text('Error,please check your internet connection');
+              return Text('Error');
             },
           ),
         ),
         const SizedBox(
           height: 12,
         ),
-        const Text(
-          'Salma Elmaghawry',
+          Text(
+          articleModel.title,
           maxLines: 2, //عشان اتحكم فى عدد الاسطر بتاع النص
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 20,
             fontWeight: FontWeight.w500,
@@ -37,8 +38,8 @@ class newsTitle extends StatelessWidget {
         const SizedBox(
           height: 8,
         ),
-        const Text(
-          'Computer Science Student',
+          Text(
+          articleModel.description??'',
           maxLines: 2,
           style: TextStyle(color: Colors.grey, fontSize: 14),
         )
