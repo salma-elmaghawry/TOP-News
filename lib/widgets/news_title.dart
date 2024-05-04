@@ -45,7 +45,7 @@ class newsTitle extends StatelessWidget {
           height: 8,
         ),
           Text(
-          articleModel.description??'Null',
+          articleModel.description??'',
           maxLines: 2,
           style: TextStyle(color: Colors.grey, fontSize: 14),
         )
