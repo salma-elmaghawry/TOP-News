@@ -12,7 +12,8 @@ class newsTitle extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.network(
+          child:  articleModel.image != null
+      ?Image.network(
             articleModel.image!,
             height: 200,
             width: double.infinity,
@@ -20,7 +21,12 @@ class newsTitle extends StatelessWidget {
             errorBuilder: (context, error, stackTrace) {
               return Text('Error');
             },
-          ),
+          ):Image.asset(
+          'assets/general.avif',
+          height: 200,
+          width: double.infinity,
+          fit: BoxFit.cover,
+        ),
         ),
         const SizedBox(
           height: 12,
@@ -39,7 +45,7 @@ class newsTitle extends StatelessWidget {
           height: 8,
         ),
           Text(
-          articleModel.description??'',
+          articleModel.description??'Null',
           maxLines: 2,
           style: TextStyle(color: Colors.grey, fontSize: 14),
         )

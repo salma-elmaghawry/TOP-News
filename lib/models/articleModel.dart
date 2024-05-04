@@ -4,7 +4,7 @@ class ArticleModel {
   final String? description;
 
   ArticleModel(
-      {required this.image, required this.title, required this.description});
+      {required this.image, required this.title,required this.description});
 }
 
 
