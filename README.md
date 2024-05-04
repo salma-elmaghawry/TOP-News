@@ -1,10 +1,10 @@
 # TOP News App
 
-![TOP News App Logo](app_logo.png)
+![TOP News App Logo]
 
-🚀 During my journey to learn Flutter, I developed the "TOP News" App. This project provided me with an excellent opportunity to gain hands-on experience with APIs and integrate them into my application.
+###🚀 During my journey to learn Flutter, I developed the "TOP News" App. This project provided me with an excellent opportunity to gain hands-on experience with APIs and integrate them into my application.
 
-🔎 The "TOP News" App allows users to browse news articles across various categories such as entertainment, health, sports, general news, science, and more.
+###🔎 The "TOP News" App allows users to browse news articles across various categories such as entertainment, health, sports, general news, science, and more.
 
 ## Features
 
