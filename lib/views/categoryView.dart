@@ -7,7 +7,7 @@ final String category ;
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(title: Text("$category"),  backgroundColor:Color.fromARGB(255, 167, 66, 52),
+      appBar: AppBar(title: Text("$category"),  backgroundColor:Color.fromARGB(255, 189, 70, 54),
       
       ),
       body: CustomScrollView(
