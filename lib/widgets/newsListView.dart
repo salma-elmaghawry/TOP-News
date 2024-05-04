@@ -5,7 +5,7 @@ import 'package:news_app/services/news_service.dart';
 import 'package:news_app/widgets/news_title.dart';
 
 class newsListView extends StatelessWidget {
-   List<ArticleModel> articles = [];
+    List<ArticleModel> articles = [];
   newsListView({super.key,required this.articles});
 
 
